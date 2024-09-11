@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: bisque;
+
+
+
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .box1 {
+            background-color: white;
+            margin-top: 30px;
+        }
+
+
+        .main_container {
+            max-width: 30%;
+            margin: auto;
+
+        }
+
+        .logo_area {
+            width: 100%;
+            padding: 20px;
+            text-align: left;
+            font-size: 3em;
+            font-weight: 300;
+            border-bottom: 1px solid beige;
+        }
+
+        .todo_task_area {
+            max-width: 100%;
+            padding: 20px;
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+
+        }
+
+        .task_input {
+            padding: 10px 20px;
+            font-size: 1.5em;
+            background-color: rgb(220, 224, 228);
+            width: 100%;
+
+        }
+
+        .task_button {
+            width: 2em;
+            height: 2em;
+            padding: 10px 10px;
+            background-color: rgb(26, 26, 186);
+            font-size: 2em;
+            color: white;
+            cursor: pointer;
+
+        }
+
+        .todo_content_area {
+            padding: 20px;
+            margin: auto;
+        }
+
+        .todo_item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .todo_content {
+            width: 30px;
+            height: 30px;
+            border: 2px solid blue;
+
+        }
+
+        .todo_content_active {
+            width: 30px;
+            height: 30px;
+            border: 2px solid #000000;
+
+        }
+
+        .todo_text {
+            gap: 10px;
+
+        }
+
+        .strikethrough {
+            text-decoration: line-through;
+            opacity: 30%;
+        }
+
+
+        @media screen and (max-width: 768px) {
+
+            body {
+                padding: 0px;
+                margin: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: bisque;
+
+
+
+            }
+
+            .main_container {
+                max-width: 90%;
+                margin: auto;
+
+            }
+
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1200px) {
+
+            body {
+                padding: 0px;
+                margin: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: blue;
+
+
+
+            }
+
+            .main_container {
+                max-width: 50%;
+                margin: auto;
+
+            }
+
+        }
+
+    
+    </style>
+
+</head>
+
+<body>
+    <div class="main_container">
+        <div class="box1">
+            <div class="logo_area">Todo</div>
+            <div class="todo_task_area">
+                <input class="task_input" type="text" placeholder="Add a new task">
+                <button class="task_button">+</button>
+            </div>
+            <br>
+            <div class="todo_content_area">
+                <div class="todo_item">
+                    <div class="todo_content"></div>
+                    <p class="todo_text">Buy water</p>
+                </div>
+
+                <div class="todo_item">
+                    <div class="todo_content"></div>
+                    <p class="todo_text">Remove utorrent and install transmission</p>
+                </div>
+
+                <div class="todo_item">
+                    <div class="todo_content"></div>
+                    <p class="todo_text">Update kernel to latest version</p>
+                </div>
+
+                <div class="todo_item">
+                    <div class="todo_content_active"><img src="./assets/images/check.svg" alt=""></div>
+                    <p class="todo_text strikethrough">Buy headphone</p>
+                </div>
+
+                <div class="todo_item">
+                    <div class="todo_content_active"><img src="./assets/images/check.svg" alt=""></div>
+                    <p class="todo-text strikethrough">Tweet @youtubeteam they're suck</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            
+
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 40%;
+            margin: auto;
+            display: flex;
+          
+
+        }
+
+        .title_area {
+            background-color:#ffeee7;
+
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+           
+
+        }
+
+        .todo_section_tab {
+            
+            background-color: #e1e1e1;
+            
+        }
+        .tab_personal{
+            width: 50%;
+            text-align: center;
+            border-bottom: 2px solid #ff6631;
+            padding: 10px;
+        }
+
+        .tab_professional{
+            width: 50%;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .add_todo_area{
+            gap: 10px;
+            background-color: #ffeee7;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 50px;
+
+
+        }
+        .add_input{
+            border: 0px;
+            outline: none;
+            padding: 10px 20px;
+            background-color: transparent;
+            font-size: 1.4em;
+            width: 100%;
+            
+        }
+        .add_button{
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+            outline: none;
+            border: none;
+            padding: 0px 30px;
+            background-color: #18c2ce;
+            color: white;
+            font-size: 1.2em;
+            cursor: pointer;
+
+        }
+
+        .todo_content_area{
+            background-color: #ffeee7;
+            padding: 20px;
+            border-radius: 20px;
+            margin: auto;
+            max-width: 40%;
+
+        }
+
+        .todo_item{
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+            width: 100%;
+            border-bottom: 1px solid #aaaaaa;
+            align-items: center;
+        }
+
+        .todo_state_text{
+            gap: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .todo_state{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 2px solid #000000;
+
+        }
+
+        .todo_state_active{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 2px solid #ff6631 ;
+
+        }
+        
+
+
+        .todo_delete{
+            background-color: transparent;
+            border: 0px;
+            outline: none;
+            width: 30px;
+            height: 30px;
+            columns: #ff6631;
+
+        }
+
+        .strikethrough{
+            text-decoration: line-through;
+            opacity: 30%;
+        }
+
+        .clear{
+            display: flex;
+            justify-content: end;
+            color: #ff6631;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title_area">Todo App</div>
+
+    <div class="">
+        
+        <div class="todo_section_tab container">
+            <div class="tab_personal">
+                Personal
+            </div>
+            <div class="tab_professional">
+                Professional
+            </div>
+        </div>
+        <br>
+        <div class="add_todo_area container">
+            <input class="add_input" type="text" placeholder="What do you need to do">
+            <button class="add_button">ADD</button>
+        </div>
+        <br>
+
+        <div class="todo_content_area">
+            <div class="todo_item">
+                <div class="todo_state_text">
+                    <div class="todo_state_active"><img src="./assets/images/check.svg" alt=""></div>
+                    <p class="todo_text strikethrough">Personal Work No1</p>
+                </div>
+                <button class="todo_delete"><img src="./assets/images/delete.svg" alt=""></button>
+            </div> 
+
+            <div class="todo_item">
+                <div class="todo_state_text">
+                    <div class="todo_state"></div>
+                    <p class="todo_text">Personal Work No2</p>
+                </div>
+                <button class="todo_delete"><img src="./assets/images/delete.svg" alt=""></button>
+            </div>
+
+            <div class="todo_item">
+                <div class="todo_state_text">
+                    <div class="todo_state"></div>
+                    <p class="todo_text">Personal Work No3</p>
+                </div>
+                <button class="todo_delete"><img src="./assets/images/delete.svg" alt=""></button>
+            </div>
+
+            <div class="todo_item">
+                <div class="todo_state_text">
+                    <div class="todo_state_active"><img src="./assets/images/check.svg" alt=""></div>
+                    <p class="todo_text strikethrough">Personal Work No4</p>
+                </div>
+                <button class="todo_delete"><img src="./assets/images/delete.svg" alt=""></button>
+            </div> 
+
+            <div class="todo_item">
+                <div class="todo_state_text">
+                    <div class="todo_state"></div>
+                    <p class="todo_text">Personal Work No5</p>
+                </div>
+                <button class="todo_delete"><img src="./assets/images/delete.svg" alt=""></button>
+            </div>
+            <br>
+            <br>
+            <div class="clear">
+                <div>clear completed</div>
+            </div>
+
+
+            
+        </div>
+        
+
+    </div>
+
+
+
+
+</body>
+
+</html>
